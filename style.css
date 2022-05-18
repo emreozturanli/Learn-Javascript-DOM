@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center{
+    text-align: center;
+}
+
+ul{
+   list-style-type: none;
+   padding: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.bg-aqua{
+    background-color: aqua;
+}
+
+.bg-orange{
+    background-color: orange;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.m-auto{
+    margin: 0 auto;
+}
+
+.pad-3{
+    padding: 3rem;
+}
+/* HEADER */
+
+header{
+    background-color: brown;
+}
+
+header h1{
+    font-size: 3rem;
+    color:#fff;
+    padding-top: 1rem;
+}
+
+header a{
+    font-size: 1.5rem;
+    color: azure;
+}
+
+header li{
+    padding: 1rem;
+    background-color: rgb(176, 170, 170);
+    border: 1px solid #fff;
+}
+
+/* TODO */
+
+.todo-main{
+    font-size: 2em;
+}
+
+.input-area input, .input-area button{
+    font-size: 1.8rem;
+}
+
+.todo-hidden button{
+    font-size: 1.5rem;
+    float: right;
+}
+
+.todo-hidden ol li{
+    display: inline-block;
+    font-size: 1.5rem;
+    padding:1rem;
+}
+
+.hidden{
+    display: none;
+}
+
+/* EXPENSE TRACKER */
+.expense-tracker{
+    gap: 2rem;
+}
+
+.expense-tracker h1{
+    font-size: 3rem;
+}
+
+.expense-tracker h3{
+    font-size: 2rem;
+}
+
+.expense-tracker input, .expense-tracker label {
+    font-size: 1.8rem;
+}
+.expense-tracker label{
+    margin-right: 1rem;
+}
+
+.expense-input{
+    text-align: left;
+}
+
+.expense__button--add{
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.expense-table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.expense-table th{
+    width: 25%;
+    font-size: 2rem;
+    border-right: 2px solid black;
+}
+
+.expense-table tr{
+    width: 25%;
+    text-align: left;
+}
+
+.expense-table tr:nth-child(even){
+    background-color: aquamarine;
+}
+.expense-table tr:nth-child(odd){
+    background-color: orchid;
+}
+
+.expense-table td{
+    font-size: 1.5rem;
+    border-right: 2px solid black;
+}
+
+/* NOTE TRACKER */
+.notetracker{
+    position: relative;
+}
+.notetracker h1{
+    font-size: 3rem;
+}
+
+.notetracker h3{
+    font-size: 2rem;
+}
+
+.notetracker-input label{
+    font-size: 2rem;
+}
+
+.notetracker-btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.note-container{
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: initial;
+}
+.note-box{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.note-box--text{
+    width: 80%;
+    gap: 1rem;
+}
+
+.note-box--text button{
+    width: 30%;
+    cursor: pointer;
+}
+
+.note-box--close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note-box--close button{
+    padding: 1rem;
+}
+
+.noteparagraph{
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hidden-details{
+    text-align: left;
+    width: 70vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+/* VOWEL COUNTER */
+
+.vowelcounter h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#vowel-input{
+    font-size: 1.5rem;
+    margin-bottom:4rem;
+    width: 500px;
+}
+
+.vowel-btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Learn JavaScript DOM</title>
+</head>
+<body>
+    <header class="text-center">
+        <h1  > LEARN JS <b>DOM</b></h1>
+        <nav class="text-center">
+            <ul class="d-flex ">
+                <li><a href="#todolist">TO DO LIST</a> </li>
+                <li><a href="#expennsetracker">EXPENSE TRACKER</a></li>
+                <li><a href="#notetracker">NOTE TRACKER</a></li>
+                <li><a href="">VOWEL COUNTER</a></li>
+                <li><a href="">MEMORY GAME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="todolist" class="todolist bg-aqua pad-3">
+        <div class="todo-main w-70 m-auto text-center">
+            <h1>To-Do List</h1>
+            <div class="input-area pad-1">
+                <input id="todo__input" type="text" required placeholder="Add an item!" >
+                <button class="add">ADD</button>
+                <button class="hide">HIDE LIST</button>
+            </div>
+        </div>
+        <div class="todo-hidden m-auto w-70">
+            <ol class="d-column  todo-ol">
+                
+            </ol>
+        </div>
+    </section>
+    <section id="expennsetracker" class="expense-tracker bg-orange pad-3 text-center d-column">
+        <h1> EXPENSE TRACKER</h1>
+        <h3>ADD NEW ITEM</h3>
+        <div class="expense-input">
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"> <br>
+   
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"> <br>
+      
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount"> <br>
+
+        </div>
+        <div>
+            <button class="expense__button--add">Add Expense</button>
+        </div>
+        
+        <div class="expense-table ">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+    <section id="notetracker" class="notetracker bg-aqua pad-3 text-center">
+        <h1> NOTE TRACKER</h1>
+        <h3>Add A New Note</h3>
+        <div class="notetracker-input">
+            <label for="note-input">Note:</label>
+            <textarea name="note-input" id="note-input" placeholder="Add your note here..." cols="80" rows="2"></textarea>
+        </div>
+        <div>
+            <button class="notetracker-btn">Add New Note</button>
+        </div>
+        <div class="note-container">
+            <!-- <div class="note-box d-flex">
+                <div class="note-box--text d-column">
+                    <h4>Note <span>1</span></h4>
+                    <p>Note here</p>
+                    <button>View Detail</button>
+                </div>
+                <div class="note-box--close"><button>X</button></div>
+            </div> -->
+        </div>
+
+        <div class="hidden-details">
+                    <button class="details-close">X</button>
+                    <p class="details-p"></p>
+        </div>   
+    </section>
+    <section id="vowelcounter" class="vowelcounter text-center bg-orange pad-3">
+        <h1> VOWEL COUNTER</h1>
+        <input id="vowel-input" type="text" placeholder="Type a piece of text" required ><br>
+        <button class="vowel-btn">CHECK</button>
+    </section>
+
+
+    <section class="memorygame bg-aqua pad-3"></section>
+    
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
