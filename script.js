@@ -130,3 +130,20 @@ function countVowels(){
     alert(counter)
 }
 
+/* NAVBAR */
+
+let lionBtn = document.querySelector('.nav-left span');
+let navbarList = document.querySelector('.navpart ul');
+
+lionBtn.addEventListener('click', () =>{
+    
+    navbarList.classList.toggle('active');
+    
+})
+
+window.addEventListener('resize', ()=>{
+        if (window.innerWidth > 1000){
+        navbarList.classList.remove('active')
+    }
+})
+
