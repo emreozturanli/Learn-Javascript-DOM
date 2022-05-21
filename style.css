@@ -258,3 +258,65 @@ header li{
     cursor: pointer;
     margin-bottom: 1rem;
 }
+
+
+/* NAVBAR */
+
+.navbar h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellowgreen;
+}
+.navpart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellowgreen;
+}
+
+.navpart span{
+    display: none;
+    cursor: pointer;
+}
+
+.navpart li{
+    display: inline-block;
+    padding: 1rem;
+    background-color: orangered;
+}
+
+.navpart a {
+    color: wheat;
+}
+
+@media (max-width:1000px){
+    .navpart{
+        flex-direction: column;
+    }
+    .navpart ul{
+        display: none;
+    }
+
+    .navpart ul.active{
+        display: block;
+    }
+
+    .navpart ul li{
+        display: block;
+    }
+
+    .nav-left{
+        width: 100%;
+    }
+
+    .navpart span{
+        display: block;
+    }
+
+
+}
