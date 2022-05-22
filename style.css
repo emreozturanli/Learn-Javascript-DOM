@@ -320,3 +320,18 @@ header li{
 
 
 }
+
+/* STOPWATCH */
+
+.stopwatch h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.stopwatch-container, .stopwatch button{
+    font-size: 3rem;
+}
+
+.stopwatch button{
+    margin-top: 2rem;
+}
