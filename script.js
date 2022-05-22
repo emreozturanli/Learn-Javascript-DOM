@@ -147,3 +147,44 @@ window.addEventListener('resize', ()=>{
     }
 })
 
+/* STOPWATCH */
+
+let timerDisplay = document.querySelector('.timerDisplay');
+let start = document.getElementById('startTimer');
+let pause = document.getElementById('pauseTimer');
+let reset = document.getElementById('resetTimer');
+let millisecond = 0, second = 0, minute = 0, hour = 0;
+let loop;
+
+start.addEventListener('click', () => {
+    loop = setInterval(counter,10)
+})
+
+pause.addEventListener('click', () =>{
+    clearInterval(loop);
+})
+
+reset.addEventListener('click', () =>{
+    clearInterval(loop);
+    timerDisplay.innerHTML = '00 : 00 : 00 : 000 '
+
+})
+
+function counter(){
+    millisecond+= 10;
+    if (millisecond == 1000){
+        millisecond = 0;
+        second++
+        if(second == 60){
+            second = 0;
+            minute++
+            if(minute == 60){
+                minute = 0;
+                hour++
+            }
+        }
+    }
+
+
+    timerDisplay.innerHTML = `${hour}: ${minute} : ${second} : ${millisecond}`;
+}
