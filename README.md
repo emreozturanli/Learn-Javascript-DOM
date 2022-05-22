@@ -33,6 +33,8 @@
 
 * Understanding 'this' keyword with Event Listeners
 
+* How to use setInterval() and clearInterval()
+
 <hr>
 
 #### 🛠 I will try to update this project and keep adding new projects regularly.
