@@ -157,9 +157,7 @@ let millisecond = 0, second = 0, minute = 0, hour = 0;
 let loop;
 
 start.addEventListener('click', () => {
-    if(loop!==undefined){
-        clearInterval(loop);
-    }
+    clearInterval(loop);
     loop = setInterval(counter,10)
 })
 
