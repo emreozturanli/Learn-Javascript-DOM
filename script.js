@@ -188,3 +188,22 @@ function counter(){
 
     timerDisplay.innerHTML = `${hour}: ${minute} : ${second} : ${millisecond}`;
 }
+
+/* BG-GENERATOR */
+
+const hexList = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+const bgSection = document.getElementById('bg-generator');
+const bgGeneratorBtn = document.querySelector('.bgGenBtn');
+
+bgGeneratorBtn.addEventListener('click', changeBg);
+
+function changeBg(){
+
+    let hex = '#';
+    for(let i = 0; i < 6; i++){
+        let randomIndex = Math.floor(Math.random() * hexList.length);
+        hex += hexList[randomIndex];
+    }
+
+    bgSection.style.backgroundColor = hex;
+}
