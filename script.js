@@ -209,3 +209,17 @@ function changeBg(){
 
     bgSection.style.backgroundColor = hex;
 }
+
+/* DIGITAL CLOCK */
+
+window.setInterval(function clock(){
+    let clock = new Date();
+    let clockHour = document.querySelector('.hour');
+    let clockMinute = document.querySelector('.minute');
+    let clockSecond = document.querySelector('.second');
+
+    clockHour.innerHTML= clock.getHours();
+    clockMinute.innerHTML= clock.getMinutes();
+    clockSecond.innerHTML= clock.getSeconds();
+
+},0);
