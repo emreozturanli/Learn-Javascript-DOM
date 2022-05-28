@@ -342,3 +342,15 @@ header li{
 .stopwatch button{
     margin-top: 2rem;
 }
+
+/* DIGITAL CLOCK */
+
+#digital-clock h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#digital-clock p{
+    font-size: 2rem;
+    margin-top: 4rem;
+}
