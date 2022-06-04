@@ -35,6 +35,10 @@
 
 * How to use setInterval() and clearInterval()
 
+* How to get the data from an array and insert it to a table and see on the webpage
+
+* How to use destructuring in JavaScript
+
 <hr>
 
 #### 🛠 I will try to update this project and keep adding new projects regularly.

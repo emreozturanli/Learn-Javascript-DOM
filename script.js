@@ -267,3 +267,29 @@ function diamondGenerator(n){
         displayDiamond.innerHTML += secLine +'<br>'
     } 
 }
+
+/* REGISTRATION */
+
+const students = [
+'C1234 - John Doe, London, Full-Stack',
+'C2345 - Jane Doe, London, Data-Science',
+'C2346 - Mary Ann, Paris, AWS-Devops',
+'C2347 - Adam Smith, Texas, AWS-Devops',
+'C2444 - Michael Great, Arizona, Full-Stack',
+'C2555 - William Cash, Manchester, Data-Science',
+'C2455 - Patrick Jane, Madrid, Full-Stack'
+] 
+
+const regisTable = document.querySelector('#registration table');
+
+students.forEach((student,index)=>{
+    const[firstPart, location, path] = students[index].split(',');
+    const [no, fullName] = firstPart.split('-');
+    const [fname, lname] = fullName.trim().split(' '); 
+    
+    let row = document.createElement('tr');
+    row.innerHTML= `<td>${no.trim()}</td> <td>${fname}</td> <td>${lname}</td> <td>${location.trim()}</td> <td>${path.trim()}</td>`
+    console.log(row.innerHTML);
+    regisTable.appendChild(row)
+
+})

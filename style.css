@@ -380,3 +380,23 @@ header li{
     font-size: 2rem;
     margin-bottom: 2rem;
 }
+
+/* REGISTRATION */
+
+#registration h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#registration table,
+#registration td,
+#registration th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#registration td,
+#registration th{
+    padding: 1rem;
+}
