@@ -223,3 +223,47 @@ window.setInterval(function clock(){
     clockSecond.innerHTML= clock.getSeconds();
 
 },0);
+
+
+/* DIAMOND */
+
+const diamondInput = document.getElementById('diamondInput');
+const displayDiamond = document.querySelector('.displayDiamond');
+
+diamondInput.addEventListener('change',() =>{
+
+    let n = diamondInput.value;
+    
+    console.log(n);
+    displayDiamond.innerHTML = ''
+
+    diamondGenerator(n)
+    
+})
+
+function diamondGenerator(n){
+    for(let i = 0; i<n; i++){
+        let line ='';
+        for(let j = 0; j <(n*2)-1;j++){
+            if(j == (n-(i+1)) || j == (i+(n-1))){
+                line += '*'
+            }else{
+                line += ' ';
+            }
+        }
+        console.log(line);
+        displayDiamond.innerHTML += line +'<br>'
+    } 
+    for(let i = 0; i<n-1; i++){
+        let secLine ='';
+        for(let j = 0; j <(n*2)-1;j++){
+            if(j == (i+1) || j == (2*n-2)-(i+1)){
+                secLine+= '*'
+            }else{
+                secLine+= ' ';
+            }
+        }
+        console.log(secLine);
+        displayDiamond.innerHTML += secLine +'<br>'
+    } 
+}
