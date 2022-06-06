@@ -282,14 +282,12 @@ const students = [
 
 const regisTable = document.querySelector('#registration table');
 
-students.forEach((student,index)=>{
-    const[firstPart, location, path] = students[index].split(',');
+students.forEach((student)=>{
+    const[firstPart, location, path] = student.split(',');
     const [no, fullName] = firstPart.split('-');
     const [fname, lname] = fullName.trim().split(' '); 
     
     let row = document.createElement('tr');
     row.innerHTML= `<td>${no.trim()}</td> <td>${fname}</td> <td>${lname}</td> <td>${location.trim()}</td> <td>${path.trim()}</td>`
-    console.log(row.innerHTML);
-    regisTable.appendChild(row)
-
+    regisTable.appendChild(row);
 })
